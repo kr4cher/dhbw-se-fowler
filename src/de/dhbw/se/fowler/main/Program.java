@@ -1,6 +1,4 @@
 package de.dhbw.se.fowler.main;
-import java.lang.*;
-import java.util.*;
 
 /**
  * Note that Java console applications need to be run through the java runtime
