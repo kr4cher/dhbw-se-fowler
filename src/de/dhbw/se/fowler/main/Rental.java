@@ -1,5 +1,6 @@
 package de.dhbw.se.fowler.main;
-class Rental {
+
+public class Rental {
 
 	private Movie movie;
 	private int daysRented;
