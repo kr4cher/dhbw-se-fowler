@@ -1,3 +1,4 @@
+package de.dhbw.se.fowler.main;
 class Rental {
 
 	private Movie movie;
