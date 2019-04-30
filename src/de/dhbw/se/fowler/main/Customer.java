@@ -1,7 +1,7 @@
 package de.dhbw.se.fowler.main;
 
-import java.lang.*;
-import java.util.*;
+import java.util.Enumeration;
+import java.util.Vector;
 
 public class Customer {
 
