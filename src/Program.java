@@ -7,6 +7,7 @@ import java.util.*;
  * applications can not be previewed in the Compiler IDE, only applets can.
  */
 public class Program {
+
 	/**
 	 * This is the main entry point for the application
 	 */
