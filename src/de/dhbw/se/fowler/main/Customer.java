@@ -56,8 +56,9 @@ public class Customer {
 			return rental.getDaysRented() * 3;
 		case Movie.CHILDRENS:
 			return rental.getDaysRented() > 3 ? (rental.getDaysRented() - 3) * 1.5 + 1.5 : 1.5;
+		default:
+			return 0;
 		}
-		return 0;
 	}
 
 }
