@@ -1,19 +1,19 @@
 package de.dhbw.se.fowler.main;
 
-import java.util.Enumeration;
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Customer {
 
 	private String name;
-	private Vector<Rental> rentals = new Vector<Rental>();
+	private List<Rental> rentals = new ArrayList<>();
 
 	public Customer(String name) {
 		this.name = name;
 	};
 
 	public void addRental(Rental rental) {
-		rentals.addElement(rental);
+		rentals.add(rental);
 	};
 
 	public String getName() {
@@ -23,13 +23,11 @@ public class Customer {
 	public String statement() {
 		double totalAmount = 0;
 		int frequentRenterPoints = 0;
-		Enumeration<Rental> enumRentals = rentals.elements();
 		String result = "Rental Record for " + this.getName() + "\n";
 		result += "\t" + "Title" + "\t" + "\t" + "Days" + "\t" + "Amount" + "\n";
 
-		while (enumRentals.hasMoreElements()) {
+		for (Rental rental : rentals) {
 			double thisAmount = 0;
-			Rental rental = (Rental) enumRentals.nextElement();
 			// determine amounts for each line
 			thisAmount = amountFor(rental);
 			// add frequent renter points
